@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "410stats scraper",
+    "script": "410stats.js",
+    "max_restarts": "10",
+    "restart_delay": "10000",
+    "log_date_format": "YYYY-MM-DD HH:mm",
+    "env": {
+      "NODE_ENV": "development",
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }]
+}

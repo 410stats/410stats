@@ -1,0 +1,20 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "axios": "^0.18.0",
+    "moment": "^2.22.0",
+    "mysql2": "^1.5.3",
+    "osmosis": "^1.1.6",
+    "random-useragent": "^0.3.1",
+    "urlify": "^0.3.6"
+  }
+}

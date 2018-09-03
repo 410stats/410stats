@@ -42,7 +42,7 @@ class RequestManager {
   async addInstance() {
     try {
       const httpAgent = new http.Agent({ keepAlive: true });
-      httpAgent.maxSockets = 1; //N'autorise qu'une connection ouverte. Utilisé pour être plus discret (sinon 10 requètes parrèles lanceront 10 nouvelles connexions)
+      httpAgent.maxSockets = 10; //N'autorise qu'une connection ouverte. Utilisé pour être plus discret (sinon 10 requètes parrèles lanceront 10 nouvelles connexions)
       const axiosInstance = axios.create({
         httpAgent: httpAgent,
       });

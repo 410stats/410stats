@@ -7,7 +7,7 @@
 ### Features
 
 - Support de proxy socks
-- Anonymisation des requètes (random user-agent, cookie ...)
+- Anonymisation des requêtes (random user-agent, cookie ...)
 - Gestion des restaurations de topic
 - Collecte de statistiques sur le nombre de connectés
 - Utilisation du load balancer du site cible pour partager les rèquetes sur différents serveurs

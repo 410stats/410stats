@@ -3,6 +3,7 @@ const mysql = require('mysql2/promise');
 const moment = require('moment');
 const urlify = require('urlify');
 const blackhole = require('stream-blackhole');
+const fetch = require("node-fetch");
 
 const RequestManager = require('./class/requestManager');
 const QueryLogger = require('./class/queryLogger');

@@ -1,20 +1,22 @@
 {
-  "name": "scrapper",
-  "version": "1.0.0",
+  "name": "410stats-scrapper",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "410stats.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.0",
-    "axios": "^0.18.0",
-    "moment": "^2.22.0",
-    "mysql2": "^1.5.3",
-    "osmosis": "^1.1.6",
-    "random-useragent": "^0.3.1",
+    "cheerio": "^1.0.0-rc.2",
+    "moment": "^2.22.2",
+    "mysql2": "^1.6.2",
+    "node-fetch": "^2.2.0",
+    "random-strings": "0.0.1",
+    "random-ua": "0.0.6",
+    "socks-proxy-agent": "^4.0.1",
+    "stream-blackhole": "^1.0.3",
     "urlify": "^0.3.6"
   }
 }

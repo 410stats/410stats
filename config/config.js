@@ -1,16 +1,20 @@
 
 const defaultConfig = {
   target: {
-    desktop: "jaimelesjv.com",
-    mobile: "m.jaimelesjv.com"
+    ip: ["127.0.0.1", "127.0.0.2"],  //Les IP du load balancer du site cible. Il faudra faire un peu de recherche pour trouver celles du celèbre site de jeux vidéo !
+    desktop: "www.jaimelesjeuxvideo.com", //L'adresse de la version desktop du site cible
+    mobile: "m.jaimelesjeuxvideo.com" //L'adresse la version mobile du site cible
   },
-  database: {
+  database: { //Paramètres de connexion de la base de données MySQL. Voir la doc de la lib utilisée pour une description complète: https://github.com/sidorares/node-mysql2
     host: '127.0.0.1',
     user: 'dev',
     database: '410stats_dev',
     password: 'qsdqsdqsdqsd',
     debug: false
   },
+  proxy: {
+    socks: ['socks5://myproxy:8080', 'socks4://myproxy2:8080'] //Liste d'url de proxy socks. Peut être laissé vide, et seulement votre IP sera utilisée pour les requètes
+  }
 };
 
 

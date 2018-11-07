@@ -16,7 +16,7 @@
 
 ### Pré-requis
 
-Une base MySQL est necessaire pour stocker les données du script.
+Une base MySQL 5.7 est necessaire pour stocker les données du script.
 Un fichier *410stats.sql* est présent à la racine du repository, contenant les tables necessaires au script.
 
 ### Réglages
@@ -54,3 +54,7 @@ node 410stats.js
 #### Proxy
 
 Pour l'instant, il n'y a pas de gestion avancée des proxy. Si votre proxy est inaccessible ou banni par le site cible, il continuera quand même d'être utilisé, rendant le script moins efficace.
+
+#### MySQL 8
+
+410stats n'est pas compatible avec MySQL 8 pour l'instant.
